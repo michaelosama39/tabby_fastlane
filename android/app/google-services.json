@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1001913383851",
+    "project_id": "tabby-14b94",
+    "storage_bucket": "tabby-14b94.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1001913383851:android:eb0aabe8e636c5156e70ee",
+        "android_client_info": {
+          "package_name": "com.example.tabby"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCazeHHUiUtd9nBh6PDBxBajQAxmDzKLac"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

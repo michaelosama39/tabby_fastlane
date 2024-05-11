@@ -1,0 +1,17 @@
+default_platform(:android)
+
+platform :android do
+
+  lane :distribution do
+    sh "fvm flutter clean"
+    sh "fvm flutter build apk --release"
+    firebase_app_distribution(
+        app: "1:1001913383851:android:eb0aabe8e636c5156e70ee",
+        android_artifact_type: "APK",
+        android_artifact_path: "../build/app/outputs/flutter-apk/app-release.apk",
+        testers: "khaled.elmetwaly321@gmail.com",
+        release_notes: "3la allh w 5ir ensh2lah"
+      )
+  end
+
+end
