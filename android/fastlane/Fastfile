@@ -3,8 +3,8 @@ default_platform(:android)
 platform :android do
 
   lane :distribution do
-    sh "fvm flutter clean"
-    sh "fvm flutter build apk --release"
+    sh "flutter clean"
+    sh "flutter build apk --release"
     firebase_app_distribution(
         app: "1:1001913383851:android:eb0aabe8e636c5156e70ee",
         android_artifact_type: "APK",
