@@ -7,11 +7,13 @@ platform :android do
     sh "flutter build apk --release"
     firebase_app_distribution(
         app: "1:1001913383851:android:eb0aabe8e636c5156e70ee",
+        firebase_cli_token: ENV["FIREBASE_CLI_TOKEN"]
         android_artifact_type: "APK",
         android_artifact_path: "../build/app/outputs/flutter-apk/app-release.apk",
         testers: "khaled.elmetwaly321@gmail.com",
         release_notes: "3la allh w 5ir ensh2lah"
       )
   end
-
+# ENV["FIREBASE_CLI_TOKEN"]
+# 1//033QN-rV_eU8bCgYIARAAGAMSNwF-L9Ir8DM_d9GD5wdeTiWpzJYLw25MmeKCCoJVIg1KfHOID0s8plxn1Okln-sne5kG3pPOfyA
 end
